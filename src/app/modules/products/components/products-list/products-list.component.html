@@ -1,0 +1,15 @@
+<div class="section-products-list">
+    <h1 style="color: aliceblue;">{{searchTerm}}</h1>
+    <div class="products-container">
+        <a *ngFor="let product of filteredProducts" class="product-card" [routerLink]="['/products', product.id]">
+            <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+            <div class="product-details">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <p class="price">\${{ product.price }}</p>
+                <button mat-raised-button color="primary">Add to Cart</button>
+            </div>
+        </a>
+    </div>
+
+</div>

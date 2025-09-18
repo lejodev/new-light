@@ -1,0 +1,25 @@
+// footer.component.scss
+
+// Variables can be defined here for consistent styling
+$footer-height: 64px;
+
+.footer {
+  // Use a mixin or define styles directly
+  min-height: $footer-height;
+  display: flex;
+  align-items: center;
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  a {
+    // Styles for the anchor tags
+    color: white; // Or use a variable like var(--mat-toolbar-color)
+    text-decoration: none;
+    margin-left: 1rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

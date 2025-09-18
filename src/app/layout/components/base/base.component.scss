@@ -1,0 +1,18 @@
+// base.component.scss
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+/* Optional: To position the header and router outlet */
+header {
+    //   position: sticky;
+    top: 0;
+    z-index: 1000;
+}
