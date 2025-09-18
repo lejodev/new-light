@@ -1,7 +1,5 @@
 # Newlight: A Hypothetical Lighting Store
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
-
 ### Overview
 
 Newlight is a modern e-commerce website for a hypothetical lighting store, built with **Angular** and **TypeScript**. This project serves as a demonstration of core Angular functionalities, leveraging a **mobile-first design** philosophy to ensure a seamless user experience across all devices. It features a cart, search feature and more core functionalities as the project is scaled.
