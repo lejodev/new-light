@@ -1,4 +1,4 @@
-# Newlight: A Hypothetical Lighting Store
+# Newlight
 
 ### Overview
 
