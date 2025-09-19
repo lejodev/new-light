@@ -1,6 +1,7 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
 // In your component's SCSS file
 mat-toolbar {
   .mat-icon-button {
@@ -28,4 +29,10 @@ mat-toolbar {
 
 .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple {
   border-color: #ffffff !important;
+}
+
+.header {
+  .logo {
+    cursor: pointer;
+  }
 }

@@ -1,0 +1,104 @@
+// Variables
+$primary-color: #007bff;
+$primary-hover-color: #0056b3;
+$background-color: #f5f5f5;
+$text-color-dark: #333;
+$text-color-medium: #555;
+$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$card-border-radius: 8px;
+
+// Mixins for reusability
+@mixin center-flex($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// Main container for the single product view
+.product-single {
+    @include center-flex();
+    padding: 2rem;
+    background-color: $background-color;
+}
+
+// Styles for the mat-card container
+.product-single-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: $card-shadow;
+    border-radius: $card-border-radius;
+    overflow: hidden;
+
+    // Use a child selector to apply flexbox
+    // to the card's internal layout
+    &,
+    mat-card-content {
+        @include center-flex(column);
+        flex-grow: 1;
+    }
+
+    // Image styling
+    img {
+        width: 100%;
+        height: 250px;
+        // Use object-fit to ensure the image fills the container without distortion
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    // Card title
+    mat-card-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    // Card content
+    mat-card-content {
+        padding: 0 1rem;
+        text-align: center;
+        justify-content: flex-start;
+
+        .description {
+            color: $text-color-medium;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+    }
+
+    // Price
+    span {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: $text-color-dark;
+        margin-bottom: 1rem;
+    }
+
+    // Action buttons
+    mat-card-actions {
+        @include center-flex();
+        padding: 1rem;
+    }
+}
+
+// Button styling
+.mat-raised-button {
+    background-color: $primary-color;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $primary-hover-color;
+    }
+}
