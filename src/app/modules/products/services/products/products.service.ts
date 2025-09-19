@@ -18,4 +18,9 @@ export class ProductsService {
   getProducts(): Product[] {
     return this.productsList;
   }
+
+  getSingleProduct(productId: string): Product | undefined {
+    this.setProducts()
+    return this.productsList.find(product => product.id === productId);
+  }
 }

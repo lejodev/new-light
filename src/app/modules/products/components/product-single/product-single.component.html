@@ -1,1 +1,17 @@
-<p>product-single works!</p>
+<div class="product-single">
+    <mat-card class="product-single-card">
+        <img src={{product?.imageUrl}} alt={{product?.name}} srcset="">
+        <mat-card-title>
+            {{product?.name}}
+        </mat-card-title>
+        <mat-card-content>
+            <p class="description">
+                {{product?.description}}
+            </p>
+            <span>${{product?.price}}</span>
+        </mat-card-content>
+        <mat-card-actions>
+            <button type="button" mat-raised-button>Add to cart</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

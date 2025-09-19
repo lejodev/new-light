@@ -1,144 +1,147 @@
 import { Product } from "../interfaces/product.interface";
 
-export const productMock: Product[] = [
-    {
-        id: 1,
-        name: 'Elegant Ergonomic Chair',
-        description: 'A fusion of style and comfort for your workspace.',
-        price: 189.99,
-        imageUrl: 'https://via.placeholder.com/150/f44336/ffffff?text=Product+1'
-    },
-    {
-        id: 2,
-        name: 'Vintage Leather Wallet',
-        description: 'Handcrafted wallet with genuine leather and a classic finish.',
-        price: 55.00,
-        imageUrl: 'https://via.placeholder.com/150/e91e63/ffffff?text=Product+2'
-    },
-    {
-        id: 3,
-        name: 'Portable Bluetooth Speaker',
-        description: 'Crisp, clear sound with a long-lasting battery life.',
-        price: 79.99,
-        imageUrl: 'https://via.placeholder.com/150/9c27b0/ffffff?text=Product+3'
-    },
-    {
-        id: 4,
-        name: 'Ceramic Coffee Mug',
-        description: 'A minimalist mug for your daily brew, dishwasher safe.',
-        price: 12.50,
-        imageUrl: 'https://via.placeholder.com/150/673ab7/ffffff?text=Product+4'
-    },
-    {
-        id: 5,
-        name: 'Smart Home Security Camera',
-        description: 'Keep an eye on your home from anywhere in the world.',
-        price: 120.00,
-        imageUrl: 'https://via.placeholder.com/150/3f51b5/ffffff?text=Product+5'
-    },
-    {
-        id: 6,
-        name: 'Stainless Steel Water Bottle',
-        description: 'Insulated bottle that keeps drinks cold for hours.',
-        price: 25.99,
-        imageUrl: 'https://via.placeholder.com/150/2196f3/ffffff?text=Product+6'
-    },
-    {
-        id: 7,
-        name: 'Adjustable Standing Desk',
-        description: 'Promote a healthier work-life balance with this adjustable desk.',
-        price: 350.00,
-        imageUrl: 'https://via.placeholder.com/150/00bcd4/ffffff?text=Product+7'
-    },
-    {
-        id: 8,
-        name: 'Noise-Cancelling Headphones',
-        description: 'Immerse yourself in music with superior audio quality.',
-        price: 249.99,
-        imageUrl: 'https://via.placeholder.com/150/009688/ffffff?text=Product+8'
-    },
-    {
-        id: 9,
-        name: 'Organic Cotton T-Shirt',
-        description: 'Soft and breathable shirt made from sustainably sourced cotton.',
-        price: 35.00,
-        imageUrl: 'https://via.placeholder.com/150/4caf50/ffffff?text=Product+9'
-    },
-    {
-        id: 10,
-        name: 'Digital Art Tablet',
-        description: 'Unleash your creativity with this high-resolution drawing tablet.',
-        price: 299.00,
-        imageUrl: 'https://via.placeholder.com/150/8bc34a/ffffff?text=Product+10'
-    },
-    {
-        id: 11,
-        name: 'Compact Travel Backpack',
-        description: 'Lightweight and durable, perfect for your next adventure.',
-        price: 85.00,
-        imageUrl: 'https://via.placeholder.com/150/ffeb3b/000000?text=Product+11'
-    },
-    {
-        id: 12,
-        name: 'Wireless Charging Pad',
-        description: 'Charge your devices quickly and conveniently, cable-free.',
-        price: 45.00,
-        imageUrl: 'https://via.placeholder.com/150/ffc107/000000?text=Product+12'
-    },
-    {
-        id: 13,
-        name: 'Acoustic Guitar',
-        description: 'A beautiful-sounding guitar for beginners and pros alike.',
-        price: 150.00,
-        imageUrl: 'https://via.placeholder.com/150/ff9800/ffffff?text=Product+13'
-    },
-    {
-        id: 14,
-        name: 'Fitness Tracker Watch',
-        description: 'Monitor your health and track your workouts with ease.',
-        price: 99.00,
-        imageUrl: 'https://via.placeholder.com/150/ff5722/ffffff?text=Product+14'
-    },
-    {
-        id: 15,
-        name: 'Cast Iron Skillet',
-        description: 'A versatile pan for searing, frying, and baking.',
-        price: 65.00,
-        imageUrl: 'https://via.placeholder.com/150/795548/ffffff?text=Product+15'
-    },
-    {
-        id: 16,
-        name: 'Handheld Vacuum Cleaner',
-        description: 'Compact and powerful, perfect for quick cleanups.',
-        price: 40.00,
-        imageUrl: 'https://via.placeholder.com/150/9e9e9e/ffffff?text=Product+16'
-    },
-    {
-        id: 17,
-        name: 'Memory Foam Pillow',
-        description: 'Experience a new level of sleep comfort and support.',
-        price: 50.00,
-        imageUrl: 'https://via.placeholder.com/150/607d8b/ffffff?text=Product+17'
-    },
-    {
-        id: 18,
-        name: 'Bamboo Cutting Board',
-        description: 'A durable and stylish addition to any kitchen.',
-        price: 30.00,
-        imageUrl: 'https://via.placeholder.com/150/9e9e9e/ffffff?text=Product+18'
-    },
-    {
-        id: 19,
-        name: 'Electric Kettle',
-        description: 'Boil water in minutes with a sleek, modern design.',
-        price: 60.00,
-        imageUrl: 'https://via.placeholder.com/150/607d8b/ffffff?text=Product+19'
-    },
-    {
-        id: 20,
-        name: 'Leather Messenger Bag',
-        description: 'Carry your essentials in style with this classic bag.',
-        price: 110.00,
-        imageUrl: 'https://via.placeholder.com/150/ff9800/ffffff?text=Product+20'
-    }
-]
+export const productMock: Product[] =
+    [
+
+        {
+            "id": '1',
+            "name": "The Aether Desk Lamp",
+            "description": "A stylish and adjustable lamp for focused illumination.",
+            "price": 189.99,
+            "imageUrl": "../../../../assets/1.png"
+        },
+        {
+            "id": '2',
+            "name": "Glowbeam Wall Sconce",
+            "description": "Handcrafted accent light with a classic, warm glow.",
+            "price": 55.00,
+            "imageUrl": "../../../../assets/2.png"
+        },
+        {
+            "id": '3',
+            "name": "Nova Portable Lantern",
+            "description": "Crisp, clear light with a long-lasting, rechargeable battery.",
+            "price": 79.99,
+            "imageUrl": "../../../../assets/3.png"
+        },
+        {
+            "id": '4',
+            "name": "Halo Sphere Lamp",
+            "description": "A minimalist orb for your daily glow, with a dimmable feature.",
+            "price": 12.50,
+            "imageUrl": "../../../../assets/4.png"
+        },
+        {
+            "id": '5',
+            "name": "Vigil Smart Light System",
+            "description": "Control your home’s ambiance from anywhere in the world.",
+            "price": 120.00,
+            "imageUrl": "../../../../assets/5.png"
+        },
+        {
+            "id": '6',
+            "name": "Starlight Pendant Light",
+            "description": "An insulated fixture that keeps your room bright for hours.",
+            "price": 25.99,
+            "imageUrl": "../../../../assets/6.png"
+        },
+        {
+            "id": '7',
+            "name": "Skyline Floor Lamp",
+            "description": "Promote a brighter work-life balance with this adjustable lamp.",
+            "price": 350.00,
+            "imageUrl": "../../../../assets/7.png"
+        },
+        {
+            "id": '8',
+            "name": "Aura Ambient Strip Lights",
+            "description": "Immerse yourself in light with superior color quality.",
+            "price": 249.99,
+            "imageUrl": "../../../../assets/8.png"
+        },
+        {
+            "id": '9',
+            "name": "The Daylight Table Lamp",
+            "description": "Soft and adjustable light made from sustainably sourced materials.",
+            "price": 35.00,
+            "imageUrl": "../../../../assets/9.png"
+        },
+        {
+            "id": '10',
+            "name": "Ember Flame Bulb",
+            "description": "Create a cozy, flickering ambiance with this decorative bulb.",
+            "price": 299.00,
+            "imageUrl": "../../../../assets/10.png"
+        },
+        {
+            "id": '11',
+            "name": "Pathfinder Outdoor Light",
+            "description": "Lightweight and durable, perfect for your garden or walkway.",
+            "price": 85.00,
+            "imageUrl": "../../../../assets/11.png"
+        },
+        {
+            "id": '12',
+            "name": "Solaris Charging Lamp",
+            "description": "Charge your devices and light up your space, conveniently cable-free.",
+            "price": 45.00,
+            "imageUrl": "../../../../assets/12.png"
+        },
+        {
+            "id": '13',
+            "name": "Sonata Chandelier",
+            "description": "A beautiful-sounding fixture for your home or business.",
+            "price": 150.00,
+            "imageUrl": "../../../../assets/13.png"
+        },
+        {
+            "id": '14',
+            "name": "Photon LED Spotlight",
+            "description": "Monitor your space and track your energy use with ease.",
+            "price": 99.00,
+            "imageUrl": "../../../../assets/14.png"
+        },
+        {
+            "id": '15',
+            "name": "Titan Wall Sconce",
+            "description": "A versatile fixture for any room, with a durable, rustic finish.",
+            "price": 65.00,
+            "imageUrl": "../../../../assets/15.png"
+        },
+        {
+            "id": '16',
+            "name": "Comet Flood Light",
+            "description": "Compact and powerful, perfect for quick, bright illumination.",
+            "price": 40.00,
+            "imageUrl": "../../../../assets/16.png"
+        },
+        {
+            "id": '17',
+            "name": "Dreamscape Lantern",
+            "description": "Experience a new level of sleep comfort and support with soft light.",
+            "price": 50.00,
+            "imageUrl": "../../../../assets/17.png"
+        },
+        {
+            "id": '18',
+            "name": "Lumen Strip Light",
+            "description": "A durable and stylish addition to any kitchen or living area.",
+            "price": 30.00,
+            "imageUrl": "../../../../assets/18.png"
+        },
+        {
+            "id": '19',
+            "name": "Volt Table Lamp",
+            "description": "Power on in minutes with a sleek, modern design.",
+            "price": 60.00,
+            "imageUrl": "../../../../assets/19.png"
+        },
+        {
+            "id": '20',
+            "name": "Radiant Track Lighting",
+            "description": "Highlight your essentials in style with this classic track lighting.",
+            "price": 110.00,
+            "imageUrl": "../../../../assets/20.png"
+        }
+
+    ]
