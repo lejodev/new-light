@@ -1,9 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-// Remove the default background and box-shadow from the mat-icon-button
-.mat-toolbar-row .mat-icon-button {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// // Remove the default background and box-shadow from the mat-icon-button
+// .mat-toolbar-row .mat-icon-button {
+//   background-color: transparent !important;
+//   box-shadow: none !important;
+// }
+/* In styles.scss or styles.css */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+/* OR, if using SCSS: */
+/* @use '@angular/material' as mat; */
+/* @include mat.all-component-themes($your-custom-theme); */
