@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../../interfaces/product.interface';
 import { productMock } from '../../mocks/products.mock';
 import { ProductsService } from '../../services/products/products.service';
@@ -16,7 +16,8 @@ export class ProductSingleComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productsService: ProductsService
+    private productsService: ProductsService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -26,12 +27,13 @@ export class ProductSingleComponent implements OnInit {
     this.activatedRoute.paramMap.subscribe(params => {
       const route = params.get('id')
       console.log('ROUTE', route);
-      
+
       if (!route) {
+        this.router.navigate(['/store']);
         throw new Error('Pruduct not found')
+
       }
-      this.product = this.productsService.getSingleProduct(route)
-      console.log('product', this.product);
+      // this.product = this.productsService.getSingleProduct(route)
 
     }
     )

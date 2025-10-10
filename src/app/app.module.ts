@@ -11,14 +11,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsListComponent } from './modules/products/components/products-list/products-list.component';
 import { ProductSingleComponent } from './modules/products/components/product-single/product-single.component';
 import { SharedModule } from './shared/shared.module';
+import { HomepageModule } from './modules/homepage/homepage.module';
+import { ProductsModule } from './modules/products/products.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
     ShoppingcartComponent,
-    ProductsListComponent,
-    ProductSingleComponent
+    // ProductsListComponent,
+    // ProductSingleComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,10 @@ import { SharedModule } from './shared/shared.module';
     RouterModule,
     LayoutModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    HomepageModule,
+    HttpClientModule
+    // ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
