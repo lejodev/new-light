@@ -28,10 +28,10 @@ export class ProductsService {
   }
 
   getProducts(): Observable<Product[] | Product> {
-    return this.httpService.get('products/details')
+    return this.httpService.get('products/')
   }
 
-  getSingleProduct(productId: string): Product | undefined {
-    return this.productsList.find(product => product.id === productId);
+  getSingleProduct(productId: string): Observable<Product | Product[]> {
+    return this.httpService.get(`products/${productId}`)
   }
 }

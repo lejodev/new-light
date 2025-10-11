@@ -12,7 +12,6 @@ import { ProductsService } from '../../services/products/products.service';
 export class ProductSingleComponent implements OnInit {
 
   product!: Product | undefined;
-  products: Product[] = []
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -21,8 +20,6 @@ export class ProductSingleComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
-    this.products = productMock;
 
     this.activatedRoute.paramMap.subscribe(params => {
       const route = params.get('id')
@@ -33,7 +30,18 @@ export class ProductSingleComponent implements OnInit {
         throw new Error('Pruduct not found')
 
       }
-      // this.product = this.productsService.getSingleProduct(route)
+      this.productsService.getSingleProduct(route).subscribe({
+        next: (res) => {
+          const data = Array.isArray(res) ? res[0] : res
+          console.log('response', res);
+
+          if (data) {
+            this.product = data
+          } else {
+            this.router.navigate(['/store'])
+          }
+        }
+      })
 
     }
     )
