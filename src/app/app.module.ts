@@ -13,6 +13,7 @@ import { ProductSingleComponent } from './modules/products/components/product-si
 import { SharedModule } from './shared/shared.module';
 import { HomepageModule } from './modules/homepage/homepage.module';
 import { ProductsModule } from './modules/products/products.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ProductsModule } from './modules/products/products.module';
     BrowserAnimationsModule,
     SharedModule,
     HomepageModule,
+    HttpClientModule
     // ProductsModule
   ],
   providers: [],

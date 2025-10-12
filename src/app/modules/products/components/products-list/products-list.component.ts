@@ -21,21 +21,30 @@ export class ProductsListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.productsService.setProducts()
-    this.products = this.productsService.getProducts()
-    this.filteredProducts = [...this.products]
-    this.searchService.currentSearchTerm.subscribe(term => {
-      console.log('Search term in products list:', term);
-      // Here you can implement filtering logic based on the search term
+    // this.productsService.setProducts()
+    this.productsService.getProducts().subscribe({
+      next:
+        (data: Product[] | Product) => {
+          //I'm ensuring data is always an array
+          const productsArray = Array.isArray(data) ? data : [data]
+          this.products = productsArray
+          this.filteredProducts = [...this.products]
 
-      this.searchTerm = term
-      this.filterProducts(this.searchTerm)
-    });
+          this.searchService.currentSearchTerm.subscribe(term => {
+            this.searchTerm = term
+            this.filterProducts(this.searchTerm)
+          });
+
+        }, error: (err) => {
+          console.log(err);
+
+        }
+    })
   }
 
   filterProducts(searchTerm: string): void {
     const term = searchTerm.toLocaleLowerCase();
-    this.filteredProducts = this.products.filter(product => product.name.toLocaleLowerCase().includes(term) || product.description.toLocaleLowerCase().includes(term))
+    this.filteredProducts = this.products.filter(product => product.name.toLocaleLowerCase().includes(term) || product.description?.toLocaleLowerCase().includes(term))
     console.log(this.filteredProducts);
   }
 
